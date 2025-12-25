@@ -1,1 +1,2 @@
-# OpenSees-Application-for-Scaling-Earthquake-Tests
+# OpenSees_Scaling_Simulations
+Application-for-Scaling-Earthquake-Tests
