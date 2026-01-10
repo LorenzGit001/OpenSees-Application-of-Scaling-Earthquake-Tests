@@ -1,0 +1,4 @@
+El Centro data file ElCentro_acc.txt based on Time History Data Files from El Centro Site Imperial Valley Irrigation District
+Given NS component 
+
+SOURCE: https://www.vibrationdata.com/elcentro_NS.dat
