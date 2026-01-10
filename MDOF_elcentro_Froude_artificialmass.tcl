@@ -35,8 +35,13 @@ set Ls 0.7   ;# length scale (e.g. 1/100)
 set Ms [expr $Ls**3] ;# mass scale (rho constant)
 set As [expr $Ls**2] ;# area scale
 set Is [expr $Ls**4] ;# inertia scale
-set gamma_m 1.4286; # dummy/artificial mass increase run for 1, 1.3, 1.6
-set Ts [expr sqrt($Ls/($gamma_m))] ; # for sqrt(Ls/($gamma_m)
+# dummy/artificial mass increase (1.4286 re-calculated through the desired eingenfrequencies) 
+  # extra time scaling will distort the kinematic Froude conditions!
+  # acceleration scale should be = 1 or close to one 
+set gamma_m 1.4286;
+# for sqrt(Ls/($gamma_m) considering the increase 
+# or sqrt(Ls) no extra time scaling!
+set Ts [expr sqrt($Ls)] ; 
 
 
 # --- Node coordinates ( )
@@ -225,3 +230,4 @@ puts "Time compression factor (prototype/model) = 1/Ts = [expr 1.0/$Ts]"
 puts "El Centro has been shaking!"
 
 wipe
+
